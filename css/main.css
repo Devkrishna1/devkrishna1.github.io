@@ -1,0 +1,131 @@
+body {
+    background-color: #f8f9fa;
+}
+.about-section {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+}
+.about-image {
+width: 150px; /* Adjust size as necessary */
+height: 150px;
+border-radius: 50%;
+background-image: url('../images/about/1.jpg');
+background-size: cover;
+background-position: center;
+border: 3px solid #fff; 
+}
+.about-text {
+    color: #333;
+}
+.flexslider, .flexslider .slides > li {
+    display: block !important; 
+}
+
+a.flex-next {
+    transition: none;
+    margin: auto;
+    height: 60px;
+}
+
+a.flex-prev {
+    transition: none;
+    margin: auto;
+    height: 60px;
+    &::before {
+        color: #0d6efd;
+    }
+}
+
+a.flex-next::before {
+    color: #0d6efd;
+}
+
+
+.flexslider .flex-direction-nav .flex-prev {
+    left: -35px; 
+    z-index: 99; 
+    opacity: 1; 
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+    left: -35px;
+}
+
+.flexslider .flex-direction-nav .flex-next {
+    right: -35px;
+    z-index: 99; 
+    opacity: 1; 
+}
+
+
+.flexslider {
+    overflow: visible; 
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+    right: -35px; 
+}
+
+#contact-me {
+    background-color: #000;
+    color: #fff; 
+}
+
+#contact-me h2 {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 40px; 
+    margin: 0 10px;
+    background-color: #e83e8c;
+    border-radius: 50%;
+    padding: 10px; 
+}
+
+#contact-me p {
+    font-size: 16px; 
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.bi {
+    font-size: 20px; 
+    margin-right: 10px; 
+}
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f8f9fa; 
+}
+
+.skills .card {
+    height: 300px;
+
+    img {
+        height: 172px !important;
+    }
+}
+
+#projects .card {
+    height: 450px;
+}
+
+.disabled {
+    background-color: #e83e8c;
+    border: #e83e8c;
+}
