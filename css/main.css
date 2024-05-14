@@ -16,9 +16,46 @@ background-image: url('../images/about/1.jpg');
 background-size: cover;
 background-position: center;
 border: 3px solid #fff; 
+margin: 20px auto;
 }
+
 .about-text {
     color: #333;
+}
+
+.interests {
+    margin-left: 15px; 
+    margin-top: 15px; 
+    background-image: url('../images/about/2.webp'); 
+    height: 400px; 
+    width: 400px; 
+    background-size: cover; 
+    background-position: center;
+}
+.interest_image {
+    float: right;
+}
+@media screen and (max-width: 768px) {
+
+    .interest_image {
+        float: none;
+    }
+
+    .interests {
+        margin-left: 0px;
+        width: 310px;
+        height: 310px;
+        margin-bottom: 10px;
+    }
+    
+}
+
+#about p {
+    text-align: justify;
+}
+
+#about h1 {
+    text-align: center;
 }
 .flexslider, .flexslider .slides > li {
     display: block !important; 
@@ -149,3 +186,6 @@ body {
         display: none !important;
     }
 }
+
+
+
