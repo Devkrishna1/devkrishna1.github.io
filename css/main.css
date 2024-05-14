@@ -113,19 +113,24 @@ body {
     color: #f8f9fa; 
 }
 
-.skills .card {
-    height: 300px;
-
-    img {
-        height: 172px !important;
+@media screen and (min-width: 768px) {
+    .skills .card {
+        height: 300px;
+    
+        img {
+            height: 172px !important;
+        }
     }
 }
-
+ 
 #projects .card {
-    @media screen and (max-width: 600px) {
-        height: 500px;
-    }
     height: 450px;
+}
+
+@media screen and (max-width: 600px) {
+    #projects .card {
+        height: 550px;
+    }
 }
 
 .disabled {
