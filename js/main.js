@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  setImgWidth(); 
     // Function to get settings
     function getFlexSliderSettings(min, max, move, itemWidth) {
       return {
@@ -39,5 +40,12 @@ $(document).ready(function() {
   
     // Adjust on window resize
     $(window).resize(setupFlexSliders);
+    $(window).resize(setImgWidth)
   });
+
+  function setImgWidth() {
+    img_width = $('.interest_image').width();
+    $('.interests').width(img_width); 
+  }
+
   
