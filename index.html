@@ -9,11 +9,17 @@
 <link rel="stylesheet" href="css/main.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMJQJGY65F"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-EMJQJGY65F');
+    gtag('config', 'G-EMJQJGY65F');
+    gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied'
+  });
 </script>
 </head>
 <body>
@@ -44,7 +50,11 @@
             </div>
         </div>
     </nav>
-
+    <div id="consent-banner" style="display: none; position: fixed; bottom: 0; width: 100%; background: #000; color: white; padding: 10px; text-align: center;">
+        <p>Cookies are used in this website to count the visitors. By continuing to use this website, you consent to our use of cookies</a>.</p>
+        <button onclick="acceptCookies()">Accept</button>
+        <button onclick="declineCookies()">Decline</button>
+    </div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8 about-section">

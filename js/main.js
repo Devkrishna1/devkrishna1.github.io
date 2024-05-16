@@ -48,4 +48,31 @@ $(document).ready(function() {
     $('.interests').width(img_width); 
   }
 
+  window.onload = function() {
+    if (!localStorage.getItem('gaConsent')) {
+        document.getElementById('consent-banner').style.display = 'block';
+    }
+};
+
+function acceptCookies() {
+    localStorage.setItem('gaConsent', 'true');
+    document.getElementById('consent-banner').style.display = 'none';
+    // Load Google Analytics
+    updateGoogleAnalyticsConsent();
+}
+
+function declineCookies() {
+    localStorage.setItem('gaConsent', 'false');
+    document.getElementById('consent-banner').style.display = 'none';
+}
+
+
+function updateGoogleAnalyticsConsent() {
+  gtag('consent', 'update', {
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'ad_storage': 'denied',
+    'analytics_storage': 'granted'
+  });
+}
   
